@@ -1,0 +1,4 @@
+# Limity a problémy programu
+Program nebyl testován na Windowsovém zařízení, není tudíž 100% jistá jeho multiplatformní kompatibilita. Implementace projektu byla směřována na Unixová zařízení. Tato situace se dá vyřešit například při překladu, kde by Makefile zjistil, na kterém zařízení se překlad vyvolal a na základě toho spouštěl odlišné části programu. V mém řešení se nachází funkce bzero(), která není kompatibilní s Windows zařízeními a tudíž by se na těchto místech vyskytl problém. Řešením by mohlo být například využití fuknce ZeroMemory(), která je vhodnější pro Windows. Dále by se musely využít jiné knihovny a funkce.<br> <br>
+Následovně se v programu nachází omezení velikosti bufferu na 1024 znaků, tudíž by při přesáhnutí této hodnoty vznikl problém. Implementace většího bufferu mi nepřišla potřebná, ale tuto limitaci chci zaznamenat.<br>
+Testování probíhalo ručně a pouze několika pokusy, není tedy dostatečné a všechny nedostatky tudíž nejsou známy. 
