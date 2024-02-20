@@ -1,4 +1,5 @@
 # IPK Projekt 1: Protokol IPK Kalkulačky
+14.5/20
 
 Mé řešení prvního projektu je psaný v jazyce C++ a sestává ze 3 .cpp souborů, tcp.cpp, udp.cpp a ipkcpc.cpp a 2 hlavičkových souborů tcp.h a udp.h.
 # TCP 
